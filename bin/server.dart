@@ -8,9 +8,9 @@ class ImageService extends ImageServiceBase {
   Future<ImagePayload> resizeImage(
       ServiceCall call, ImagePayload request) async {
     final image = decodeImage(request.payload);
-    final resizedImage = copyResize(image!, width: 300);
+    final resizedImage = copyResize(image!, width: 120);
 
-    return ImagePayload(payload: encodePng(image));
+    return ImagePayload(payload: encodeJpg(resizedImage, quality: 80));
   }
 }
 
