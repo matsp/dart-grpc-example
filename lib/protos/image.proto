@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+service ImageService {
+  rpc ResizeImage (ImagePayload) returns (ImagePayload) {}
+}
+
+message ImagePayload {
+  bytes payload = 1;
+}
