@@ -21,5 +21,5 @@ Future<void> main(List<String> args) async {
     CodecRegistry(codecs: const [GzipCodec(), IdentityCodec()]),
   );
 
-  await server.serve(port: 8888);
+  await server.serve(port: 8080);
 }

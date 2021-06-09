@@ -6,7 +6,7 @@ import 'package:grpc/grpc.dart';
 Future<void> main(List<String> args) async {
   final channel = ClientChannel(
     'localhost',
-    port: 8888,
+    port: 8080,
     options: ChannelOptions(
       credentials: ChannelCredentials.insecure(),
       codecRegistry:
