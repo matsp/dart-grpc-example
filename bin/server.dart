@@ -1,6 +1,5 @@
 import 'package:dart_grpc_example/generated/lib/protos/image.pbgrpc.dart';
 import 'package:grpc/grpc.dart';
-import 'package:grpc/src/server/call.dart';
 import 'package:image/image.dart';
 
 class ImageService extends ImageServiceBase {
